@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="15" time="1.195" timestamp="2025-05-01T18:04:31.297343-07:00" hostname="sumancom"><testcase classname="pytest_Demo.test_four" name="test_responsecode" time="0.001" /><testcase classname="pytest_Demo.test_four" name="test_responsecode_200" time="0.001" /><testcase classname="pytest_Demo.test_login" name="test_login" time="0.001" /><testcase classname="pytest_Demo.test_login" name="test_checkout" time="0.001" /><testcase classname="pytest_Demo.test_login" name="test_logout" time="0.000" /><testcase classname="pytest_Demo.test_three.MyTestCase" name="test_something" time="0.001"><failure message="AssertionError: True != False">self = &lt;test_three.MyTestCase testMethod=test_something&gt;
+
+    def test_something(self):
+&gt;       self.assertEqual(True, False)  # add assertion here
+E       AssertionError: True != False
+
+pytest_Demo\test_three.py:6: AssertionError</failure></testcase><testcase classname="test_calculator.TestCalculator" name="test_add" time="0.001" /><testcase classname="test_calculator.TestCalculator" name="test_add_failure" time="0.001"><failure message="AssertionError: 12 != 17">self = &lt;test_calculator.TestCalculator testMethod=test_add_failure&gt;
+
+    def test_add_failure(self):
+         result = self.calc.add(6,6)
+&gt;        self.assertEqual(result, 17)
+E        AssertionError: 12 != 17
+
+test_calculator.py:19: AssertionError</failure></testcase><testcase classname="test_calculator.TestCalculator" name="test_divide" time="0.001" /><testcase classname="test_calculator.TestCalculator" name="test_divide_zero" time="0.000" /><testcase classname="test_calculator.TestCalculator" name="test_multiply" time="0.000" /><testcase classname="test_calculator.TestCalculator" name="test_subtract" time="0.000" /><testcase classname="test_first" name="test_1" time="0.000" /><testcase classname="test_first" name="test_2" time="0.001" /><testcase classname="test_first" name="test_3" time="0.001"><failure message="AssertionError: Title doesn't match&#10;assert 'Jenkins' is 'Jenkins is CI server'">def test_3():
+        name = 'Jenkins'
+        title = 'Jenkins is CI server'
+&gt;       assert  name is title, "Title doesn't match"
+E       AssertionError: Title doesn't match
+E       assert 'Jenkins' is 'Jenkins is CI server'
+
+test_first.py:20: AssertionError</failure></testcase></testsuite></testsuites>
